@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="save-data" content="on">
+    <title>Bug Bounty Methodology Checklist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: gray;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+	    box-shadow:  0px 0px 30px 0px #9fc5e8;
+        }
+
+        h1 {
+            text-align: center;
+            color: #444;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+            padding: 10px;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: background 0.3s ease;
+        }
+
+        li:hover {
+            background: #eef;
+	    box-shadow:  0px 0px 10px 0px #a8b6d7;
+        }
+
+        input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        @media (max-width: 600px) {
+            li {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bug Bounty Methodology</h1>
+<ul>
+<li><label><input type="checkbox"> Get your note ready</label></li>
+<li><label><input type="checkbox"> Recon with shodan -: ssl.cert.subject.cn:"target.com" or hostname:"target.com" :-</label></li>
+<li><label><input type="checkbox"> In the main domain look at -: robots.txt :- file and try to see if you can access the Disallow files</label></li>
+<li><label><input type="checkbox"> subdomains</label></li>
+<li><label><input type="checkbox"> Ports with naabu</label></li>
+<li><label><input type="checkbox"> use nuceli tech detect templates to know what is the website technology </label></li>
+<li><label><input type="checkbox"> Fuzz the apis domains</label></li>
+<li><label><input type="checkbox"> Nmap and nikto scans</label></li>
+<li><label><input type="checkbox"> jsfiles</label></li>
+<li><label><input type="checkbox"> extract secrets from the js files</label></li>
+<li><label><input type="checkbox"> Get the waybackurls for target and try to find any sensitive data -: cat way.txt | grep "email=" :- or "%40"any thing you want</label></li>
+<li><label><input type="checkbox"> Go into the website and search for attack vectors and target every attack vector that you found !</label></li>
+</ul>
+<div class="footer">
+<p>Happy hunting</p>
+</div>
+</body>
+</html>
